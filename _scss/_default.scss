@@ -1,247 +1,182 @@
-// Variables
+@import "variables";
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 
-$container-width: 1200px;
-$container-padding: 30px;
+body{
+    font-family: Ubuntu,san-serif;
+    color:$light_grey
+}
+.dropdown-item{
+    color:$edoblue;
+}
+.header {
+   height: 180px; 
+   background-color:$edoblue;
+   @include downskew-header;
+   padding-top: 4rem;
 
-$primary-color: #C8385A;
-$text-color: #333;
-$link-color: #7F7F7F;
-
-$font-xl: 58px;
-$font-md: 22px;
-$font-sm: 18px;
-$font-xs: 16px;
-
-$system-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-$primary-font-family: $system-font-family;
-
-
-
-// Mixin
-
-@mixin container($padding) {
-  max-width: $container-width;
-  padding: 0 $padding;
-  margin: auto;
 }
 
+.header-subsection {
+    height: 120px; 
+    background-color:$edoblue;
+    @include downskew-header;
+    padding-top: 4rem;
 
-// Global
+ 
+ }
 
-body {
-  font-family: $primary-font-family;
-  color: $text-color;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+.quote-blue {
+    background: $edoblue;
+    @include upskew;
+    @include downskew;
+    color:white !important;
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.75rem;
+    }
+    h4{
+        font-size: 1.50rem;
+    }
+    h5{
+        font-size: 1.25rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+
 }
 
-main {
-  flex: 1;
-  width: 100%;
+.quote-green {
+    background: $edogreen;
+    @include upskew;
+    @include downskew;
+    color:white;
 }
 
-a {
-  color: $link-color;
-  text-decoration: none;
-  font-size: $font-sm;
+.footer{
+    background: $edoblue;
+    @include upskew;
+    color: white;
+    a{
+        color:white
+    }
+    
+}
+.z-index-top{
+    z-index: 99;
+}
+.menu-option{
+    color:$edoblue !important;
 
-  &:hover {
-    color: $primary-color;
-  }
+}
+h1{
+    color:white;
+    font-size: 18px;
+
+
 }
 
+h2{
+    font-size: 24px;
+    color:$edoblue;
+    font-weight: normal;
+} 
 
-// Shared
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
 
-.button {
-  display: inline-block;
-  border: 1px solid lighten($link-color, 40%);
-  border-radius: 50px;
-  padding: 15px 30px;
-  font-weight: 300;
-
-  &:hover {
-    background-color: lighten($link-color, 49%);
-  }
 }
 
-.accent {
-  color: $primary-color;
+.opacity-80{
+    @include opacity(0.80);
 }
 
+.blue-indicator{
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-top: 10px solid $edoblue;
+    border-bottom: 10px solid transparent;
+}
+.page{
+    h1{
+        color: $edoblue;
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.75rem;
+    }
+    h4{
+        font-size: 1.50rem;
+    }
+    h5{
+        font-size: 1.25rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+}
+.header.page {
+    h1,h2{
+        color:white !important;
+    }
+}
+.btn-outline-primary{
+    color:$edoblue;
+    border-color:$edoblue;
+    
+}
+.btn-xxl{
+    padding: 18px 28px;
+    font-size: 22px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 
-// Components & pages
+}
 
-.navigation {
-
-  @include container($container-padding);
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  margin-top: 10px;
-
-  padding-bottom: 10px;
-  border-bottom: 1px solid lighten($link-color, 40%);
-
-  &__branding {
-      display: flex;
-      align-items: center;
-  }
-
-  &__title {
-    color: $text-color !important;
-    font-size: $font-md;
-    font-weight: 500;
-  }
-
-  &__logo {
-    margin-right: 10px;
-  }
-
-  &__logo-img {
-    height: 40px;
-    width: 40px;
-  }
-
-  &__links {
+/* equal card height */
+.row-equal > div[class*='col-'] {
     display: flex;
-    flex-direction: row;
-  }
-
-  &__link {
-    margin-left: 30px;
-    font-size: $font-xs;
-
-    &--active {
-      color: $primary-color;
-    }
-  }
-
+    flex: 1 0 auto;
 }
 
-.home {
-
-  @include container($container-padding);
-
-  height: 65vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-
-  &__headline-container {
-    padding: 0 $container-padding * 3;
-  }
-
-  &__headline {
-    font-size: $font-xl;
-  }
-
+.row-equal .card {
+   width: 100%;
 }
 
-
-.page {
-
-  @include container($container-padding);
-  margin-top: 60px;
-
-  &__header {
-    padding: 0 $container-padding;
-  }
-
-
-  &__content {
-    padding: 0 $container-padding;
-  }
-}
-
-.blog {
-  @include container($container-padding);
-  margin-top: 60px;
-
-
-  &__post {
-
-    padding: 0 $container-padding;
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
     display: flex;
-    flex-direction: row;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid lighten($link-color, 40%);
+}
 
-    @media (max-width: 900px) {
-      flex-direction: column;
-    }
-
-    &:first-child {
-      padding-top: 10px;
-    }
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-
-  &__date {
-    padding-top: 15px;
-    width: 30%;
-    color: $link-color;
-  }
-
-  &__content {
-    width: 100%;
-  }
-
-
-  &__link {
-    &:hover {
-      color: $link-color;
-    }
-  }
-
-  &__title {
-    color: $text-color;
-    font-size: $font-md;
-    padding-top: 0;
-  }
-
-  &__excerpt {
-    color: $link-color;
-  }
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
 }
 
 
-.post {
-
-  @include container($container-padding);
-  margin-top: 80px;
-
-
-  &__container {
-    padding: 0 $container-padding;
-  }
-
-  &__meta {
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid lighten($link-color, 40%);
-  }
-
-}
-
-
-.footer {
-  border-top: 1px solid lighten($link-color, 40%);
-  padding: 30px 0;
-  margin-top: 80px;
-
-  &__container {
-    @include container($container-padding);
-    color: $link-color;
-  }
-
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
 }

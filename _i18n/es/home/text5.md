@@ -1,0 +1,1 @@
+### Utilizamos la Metodología Ágil para incrementar la calidad de los procesos mediante integración, automatización y actualización constante de datos, desarrollo en cadencia, entrega a demanda y transparencia.

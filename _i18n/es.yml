@@ -1,0 +1,126 @@
+devops:
+  title: BouTIC Devops
+  images:
+    img1:
+      title: Onboarding de proyectos.
+      text: Gestionamos el arranque del proyecto para aportar a nuestros clientes las herramientas que necesitan para la ejecución, así como entornos de desarrollo, preproducción, producción y automatización de los despliegues.
+    img2:
+      title: Gestión de la integración continua.
+      text: Gestión del despliegue continuo. Validamos la construcción del software en un entorno de preproducción adecuado, haciendo cambios de versión transparentes de forma automática, para que el usuario final se mantenga al tanto de todo el proceso.
+    img3:
+      title: Automatización de los sistemas de prueba y regresión. 
+      text: De cara tanto a la creación de nuevas funcionalidades como al mantenimiento de funcionalidades anteriores, y siempre procurando garantizar la confianza y la transparencia con nuestros clientes, diseñamos una arquitectura de pruebas completamente adaptada a sus necesidades.
+    img4:
+      title: Gestión del despliegue continuo.
+      text: Validamos la construcción del software en un entorno de preproducción adecuado, haciendo cambios de versión transparentes de forma automática, para que el usuario final se mantenga al tanto de todo el proceso.
+    img5:
+      title: Gestión de las plataformas que dan soporte al software.
+      text: Nos encargamos de configurar todos los elementos que soportan el desarrollo, (sistemas de bases de datos, servidores de aplicación, servidores web, sistema de cache intermedio, gestores y sistemas de orquestación...) para garantizar la calidad del software y su adaptación a los procesos de cada empresa
+    img6:
+      title: Utilizamos las mejores herramientas
+      text: Principios ágiles basados seguridad, seguimiento y métricas para favorecer entregas frecuentes y en ciclos cortos, aportando valor desde el primer momento.
+    img7:
+      title: Utilizamos las mejores herramientas
+      text: Sistemas de Control de Versión. Git, GitLab, GitHub, BitBucket, SVN, IBM Clearcase
+    img8:
+      title: Utilizamos las mejores herramientas
+      text: Empaquetado de software y contenerización. Maven, Docker, Packer
+    img9:
+      title: Utilizamos las mejores herramientas
+      text: Aseguramiento de la calidad. Selenium, Jasmine, Junit, Jmeter
+    img10:
+      title: Utilizamos las mejores herramientas
+      text: Cloud / IaaS / PaaS. Kubernetes, OpenShift, OpenStack, AWS, Google Cloud Platform, Microsoft Azure
+    img11:
+      title: Utilizamos las mejores herramientas
+      text: BI / Monitoring / Logging. Kibana, Nagios, Grafana, Logstash, StackDriver
+    img12:
+      title: Utilizamos las mejores herramientas
+      text: Configuration Management / Provisioning. Puppet, Chef, Ansible, Vagrant
+us:
+  title: Quienes Somos
+  images:
+    img1:
+      title: Trabaja con los mejores profesionales
+      text: Contamos con los mejores perfiles especializados.
+    img2:
+      title: Utilizamos las mejores herramientas
+      text: Utilizar la herramienta mas adecuada para cada caso.
+    img3:
+      title: Ágiles, Comprometidos.
+      text: Tú proyecto es nuestro proyecto.
+    img4:
+      title: Trabaja con los mejores profesionales
+      text: Tú proyecto es nuestro proyecto.
+    img5:
+      title: Utilizamos las mejores herramientas
+    img6:
+      title: Ágiles, Comprometidos.
+agile:
+  title: Agile Factory
+  images:
+    img1:
+      title: ¿Metodología Ágil? ¿Scrum? Nuestra garantía de buenos resultados
+    img2:
+      title: Plazos de 2 semanas. Sprint
+    img3:
+      title: Reuniones de equipo diarias. Daily Meeting
+    img4:
+      title: Reuniones semanales con el cliente. Planning y Demo Days
+    img5:
+      title: Buenos resultados garantizados
+
+  cases:
+    case1:
+      title: Ericsson A/B
+    case2:
+      title: Minor
+    case3:
+      title: Banco Santander Brasil
+gcp:
+  title: Google Cloud Partner
+smart:
+  title: Soluciones Smart
+home:
+  header:
+    headline: Your Agile Cloud Company
+  title1: Tu Compañero de viaje hacia la tecnología del futuro.
+  title3: Aportamos valor con cada proyecto
+  images:
+    img1:
+      title: Trabaja con los mejores profesionales
+      text: Contamos con los mejores perfiles especializados.
+    img2:
+      title: Utilizamos las mejores herramientas
+      text: Utilizar la herramienta mas adecuada para cada caso.
+    img3:
+      title: Ágiles, Comprometidos.
+      text: Tú proyecto es nuestro proyecto.
+    img4:
+      title: Trabaja con los mejores profesionales
+      text: Tú proyecto es nuestro proyecto.
+    img5:
+      title: Utilizamos las mejores herramientas
+      text: Tú proyecto es nuestro proyecto.
+    img6:
+      title: Ágiles, Comprometidos.
+      text: Tú proyecto es nuestro proyecto.
+
+  values:
+    title: Valores
+    value1: Especialización
+    value2: Innovación
+    value3: Valor añadido
+    value4: Equipo
+  metodology:
+    title: Metodología
+    met1: Metodología Ágil
+    met2: Integración Contínua
+    met3: Cadencia-Demanda
+    met4: Transparencia
+    met5: Propiedad Compartida
+  services:
+    title: Servicios
+    serv1: Google Cloud Partner
+    serv2: Consultoría/Factoría de Software
+    serv3: Investigación y Desarrollo

@@ -1,0 +1,114 @@
+--- 
+layout: default 
+---
+<div class="container-fluid">
+<div class="page row header align-items-center">
+  <div class="col">
+    <div class="mx-auto text-center">
+      <h1 class="mx-auto text-center">{{ page.title | escape }}</h1>
+    </div>
+  </div>
+</div>
+<div class="container pt-5">
+    <div class="row align-items-center pt-3 mb-3">
+        <div class="page col-12 text-justify font-weight-normal">
+    
+          {% tf agile/text1.md %}
+    
+        </div>
+      </div>
+
+</div>
+<div id="carousel" class="carousel slide col w-100 m-0 px-0 row" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="carousel-caption d-none -md-block">
+        <h5>{% t agile.images.img1.title %}</h5>
+      </div>
+      <img class="d-block w-100" src="https://picsum.photos/900/300/?blur" alt="{% t agile.images.img1.title %}">
+
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://picsum.photos/900/300/?blur" alt="{% t agile.images.img2.title %}">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{% t agile.images.img2.title %}</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://picsum.photos/900/300/?blur" alt="{% t agile.images.img3.title %}">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{% t agile.images.img3.title %}</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://picsum.photos/900/300/?blur" alt="{% t agile.images.img4.title %}">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{% t agile.images.img4.title %}</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://picsum.photos/900/300/?blur" alt="{% t agile.images.img5.title %}">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{% t agile.images.img5.title %}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  
+<div class="row align-items-center pt-3 mb-3">
+    <div class="page col-12 text-justify font-weight-normal">
+
+      {% tf agile/text2.md %}
+
+    </div>
+  </div>
+    <div class="container mb-5">
+      <div class="row">
+        <h2 class="col12 text-center">{% t agile.tittle2 %}
+          </h2>
+      </div>
+  <section class="carousel slide" data-ride="carousel" id="postsCarousel">
+      <div class="container p-t-0 m-t-2 carousel-inner">
+          <div class="row align-items-start row-equal carousel-item active m-t-0 justify-content-around">
+              <div class="col-md-4">
+                  <div class="card">
+                    <h4 class="card-header">{% t agile.cases.case1.title %}</h4>
+                      <div class="card-img-top card-img-top-250">
+                          <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
+                      </div>
+                      <div class="card-block p-t-2">
+                          {% tf agile/case1.md %}
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <h4 class="card-header">{% t agile.cases.case2.title %}</h4>
+
+                      <div class="card-img-top card-img-top-250">
+                          <img class="img-fluid" src="http://i.imgur.com/Hw7sWGU.png" alt="Carousel 2">
+                      </div>
+                      <div class="card-block p-t-2">
+                          {% tf agile/case2.md %}
+
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <h4 class="card-header">{% t agile.cases.case3.title %}</h4>
+                      <div class="card-img-top card-img-top-250">
+                          <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
+                      </div>
+                      <div class="card-block p-t-2">
+                          {% tf agile/case3.md %}
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+</div>

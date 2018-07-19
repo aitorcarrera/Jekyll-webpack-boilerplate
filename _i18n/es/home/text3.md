@@ -1,0 +1,3 @@
+Con una cultura empresarial centralizada en la excelencia tecnológica, Edosoft Factory entiende los éxitos del cliente como propios y aporta valor a sus proyectos mediante el trabajo continuado, la colaboración y el uso de herramientas de Google para la empresa como G Suite y Google Cloud Platform.
+
+Así el equipo y la especialización de sus diferentes componentes impulsan la innovación, la optimización y la rentabilidad tanto en empresas públicas como en privadas, implantando el uso de la Metodología Ágil a todos los niveles.
